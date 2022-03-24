@@ -1,4 +1,4 @@
-import Theme from './theme';
+import theme from './theme';
 
 export interface ITheme {
   colors: IColors;
@@ -7,19 +7,20 @@ export interface ITheme {
 }
 
 export interface IColors {
-  primary: string;
-  secondary: string;
-  blue: string;
-  green: string;
-  purple: string;
-  yellow: string;
-  red: string;
+  white: string;
+  black: string;
+  description: string;
+  title: string;
+  separators: string;
+  lines: string;
+  subTitle: string;
 }
 
 export interface IFonts {
   regular: string;
   semiBold: string;
   bold: string;
+  regularMont: string;
 }
 
 export interface IFontSizes {
@@ -33,4 +34,4 @@ export interface IFontSizes {
   xxxxLarge: number;
 }
 
-export default Theme;
+export default theme;

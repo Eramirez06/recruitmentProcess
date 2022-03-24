@@ -25,6 +25,7 @@
 		C1D1CDE3D2304D1598EB6514 /* PlayfairDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA81F9CE45E14483B4B0A18A /* PlayfairDisplay-Italic.ttf */; };
 		D09635F053F64E9291AC7B27 /* PlayfairDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D095393D27748D3B9F23C3D /* PlayfairDisplay-ExtraBold.ttf */; };
 		D0C53B21453849BAB4230763 /* PlayfairDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F585F2AC674656B585FF0E /* PlayfairDisplay-Black.ttf */; };
+		D9FD3BEB117F4E9691A52677 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0147AC63328B4D769844B2FA /* Montserrat-Regular.ttf */; };
 		EA29599592BE4D2C8A75218B /* PlayfairDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 567E46F67B9C45DBB328ECFA /* PlayfairDisplay-Medium.ttf */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		00E356EE1AD99517003FC87E /* recruimentProcessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recruimentProcessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* recruimentProcessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = recruimentProcessTests.m; sourceTree = "<group>"; };
+		0147AC63328B4D769844B2FA /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* recruimentProcess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recruimentProcess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = recruimentProcess/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = recruimentProcess/AppDelegate.m; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				727F25E5CF7F42099E37A04D /* PlayfairDisplay-Regular.ttf */,
 				33AFAB3499AB469AA9EB581C /* PlayfairDisplay-SemiBold.ttf */,
 				7C86254F237A4DBCBB154D20 /* PlayfairDisplay-SemiBoldItalic.ttf */,
+				0147AC63328B4D769844B2FA /* Montserrat-Regular.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -302,6 +305,7 @@
 				95AD1B810B574D139798B500 /* PlayfairDisplay-Regular.ttf in Resources */,
 				8D64B5957F134F8D98991AC5 /* PlayfairDisplay-SemiBold.ttf in Resources */,
 				5BAAE6DE1CED400CBBCEC786 /* PlayfairDisplay-SemiBoldItalic.ttf in Resources */,
+				D9FD3BEB117F4E9691A52677 /* Montserrat-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

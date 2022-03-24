@@ -3,18 +3,19 @@ import {extendTheme} from 'native-base';
 
 const Theme: ITheme = {
   colors: {
-    primary: '#ffffff',
-    secondary: '#000000',
-    blue: '#2121a6',
-    yellow: '#c4cf30',
-    green: '#43cf30',
-    purple: '#8230cf',
-    red: '#cf3030',
+    white: '#FFFFFF',
+    black: '#000000',
+    description: '#777777',
+    title: '#171616',
+    separators: '#EEEEEE',
+    lines: '#D8D8D8',
+    subTitle: '#202020',
   },
   fonts: {
     regular: 'PlayfairDisplay-Regular',
     semiBold: 'PlayfairDisplay-Medium',
     bold: 'PlayfairDisplay-Bold',
+    regularMont: 'Montserrat-Regular',
   },
   fontSizes: {
     xSmall: 9,

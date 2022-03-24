@@ -10,7 +10,7 @@ export const showToast = ({title, duration}: IToastProps) => {
     title,
     duration: duration || 2000,
     style: {
-      backgroundColor: theme.colors.secondary,
+      backgroundColor: theme.colors.title,
     },
   });
 };
