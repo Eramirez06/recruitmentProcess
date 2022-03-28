@@ -9,14 +9,13 @@ import {PersistGate} from 'redux-persist/integration/react';
 import Splash from 'screens/Splash';
 import {privateNavigatorRef} from 'utils/navigationService';
 import {store, persistor} from 'store';
-import {NativeBaseTheme} from 'theme/theme';
 
 const App = () => {
   useFlipper(privateNavigatorRef);
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <NativeBaseProvider theme={NativeBaseTheme}>
+        <NativeBaseProvider>
           <SafeAreaProvider>
             <NavigationContainer
               onReady={() => RNBootSplash.hide({fade: true})}

@@ -1,15 +1,7 @@
 {
     "translation" : {
-        "login": {
-            "signIn": "Sign In",
-            "newUser": "You don't have account?",
-            "welcome": "Welcome to POC!",
-            "credentials": "Enter your credentials",
-            "username": "Username",
-            "password": "Password",
-            "empty_user": "User is empty",
-            "empty_password": "Password is empty",
-            "invalid_credentials": "Invalid Credentials"
+        "home": {
+            "menuTitle": "Menu"
         }
     }
 }

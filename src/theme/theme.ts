@@ -1,5 +1,4 @@
 import {ITheme} from '.';
-import {extendTheme} from 'native-base';
 
 const Theme: ITheme = {
   colors: {
@@ -28,18 +27,5 @@ const Theme: ITheme = {
     xxxxLarge: 40,
   },
 };
-
-export const NativeBaseTheme = extendTheme({
-  components: {
-    Input: {
-      baseStyle: {
-        color: 'light.900',
-      },
-      defaultProps: {
-        placeholderTextColor: 'light.700',
-      },
-    },
-  },
-});
 
 export default Theme;

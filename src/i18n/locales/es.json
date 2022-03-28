@@ -1,15 +1,7 @@
 {
     "translation":{
-        "login": {
-            "signIn": "Iniciar session",
-            "newUser": "¿No tienes una cuenta?",
-            "welcome": "Bienvenido a POC!",
-            "credentials": "Ingresa tus credenciales",
-            "username": "Username",
-            "password": "Contraseña",
-            "empty_user": "Ingresa tu usuario",
-            "empty_password": "Ingresa tu contraseña",
-            "invalid_credentials": "Credenciales invalidas"
+        "home": {
+            "menuTitle": "Menu"
         }
     }     
 }
