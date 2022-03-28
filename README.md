@@ -1,1 +1,2 @@
 - [Video Link](https://drive.google.com/file/d/1AkF0KZYQuFJfca7CDbXyBY6cwbMA2azp/view?usp=sharing)
+- [Technical design](https://docs.google.com/document/d/1eAyL69FH4wRa-kXdJf233DutVKpm_ziArhNQqX837nw/edit?usp=sharing)
