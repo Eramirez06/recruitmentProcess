@@ -1,12 +1,26 @@
+import {IRestaurantResponse, IMenusOptions} from '../api/model';
+
 export interface IItemMenuProps {
-  title: string;
+  name: string;
   description: string;
   price: string;
 }
 
 export interface IListMenu {
-  title: string;
+  name: string;
   description: string;
   price: string;
-  id: number;
+}
+
+export interface IListMenuProps {
+  listMenuInfo: Array<IListMenu>;
+}
+
+export interface IMenuProps {
+  infoRestaurant: IRestaurantResponse;
+}
+export interface IScene {
+  key: string;
+  title: string;
+  options: Array<IMenusOptions>;
 }

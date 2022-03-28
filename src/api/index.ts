@@ -1,8 +1,9 @@
 import {Keyboard} from 'react-native';
 import axios, {AxiosInstance, AxiosRequestConfig} from 'axios';
+import Config from 'react-native-config';
 
 const instance: AxiosInstance = axios.create({
-  baseURL: 'test/api/',
+  baseURL: Config.BASE_URL,
 });
 
 const dispatchRequest = async (
@@ -10,6 +11,7 @@ const dispatchRequest = async (
   hideKeyboard: boolean = true,
 ) => {
   instance.defaults.headers!.common['Content-Type'] = 'application/json';
+  instance.defaults.headers!.common['X-API-KEY'] = Config.API_KEY;
   instance.defaults.headers!.common!.Accept = 'application/json';
 
   try {
@@ -23,4 +25,4 @@ const dispatchRequest = async (
   }
 };
 
-export {dispatchRequest};
+export default dispatchRequest;

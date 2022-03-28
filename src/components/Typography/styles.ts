@@ -9,10 +9,11 @@ const BASE_STYLE: TextStyle = {
 export default StyleSheet.create({
   title: {
     ...BASE_STYLE,
-    fontSize: scaleHeight(30),
+    fontSize: scaleHeight(26),
     lineHeight: scaleHeight(35),
     fontFamily: theme.fonts.regular,
     letterSpacing: scaleWidth(2),
+    textAlign: 'center',
   },
   subTitle: {
     ...BASE_STYLE,

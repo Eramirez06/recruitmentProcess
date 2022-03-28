@@ -1,27 +1,28 @@
 import Typography from 'components/Typography';
-import React, {memo, useCallback} from 'react';
+import React, {FC, memo, useCallback} from 'react';
 import {useWindowDimensions} from 'react-native';
-import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
+import {TabView, TabBar} from 'react-native-tab-view';
 import styles from './styles';
 import ListMenu from '../ListMenu';
+import {IMenuProps, IScene} from '../types';
 
-const renderScene = SceneMap({
-  first: ListMenu,
-  second: ListMenu,
-  third: ListMenu,
-  four: ListMenu,
-});
+const renderScene = ({route}: {route: IScene}) => {
+  switch (route.key) {
+    default:
+      return <ListMenu listMenuInfo={route?.options} />;
+  }
+};
 
-const MenuInfo = () => {
+const MenuInfo: FC<IMenuProps> = ({infoRestaurant}) => {
   const layout = useWindowDimensions();
+  const menus = infoRestaurant.menus.map(val => ({
+    key: val?.name,
+    title: val?.name,
+    options: val?.options,
+  }));
 
   const [index, setIndex] = React.useState(0);
-  const [routes] = React.useState([
-    {key: 'first', title: 'Small Plates'},
-    {key: 'second', title: 'Principal'},
-    {key: 'third', title: 'Desserts'},
-    {key: 'four', title: 'Fishes'},
-  ]);
+  const [routes] = React.useState(menus);
 
   const renderLabel = useCallback(
     ({route, focused}) => (

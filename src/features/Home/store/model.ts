@@ -1,18 +1,6 @@
-type THome = {
-  id?: number | null;
-};
+import {IRestaurantResponse} from '../api/model';
 
 export interface IHomeState {
   isLoading: boolean;
-  data: THome;
-}
-
-export type IDataHomeRequest = {
-  userName: string;
-  password: string;
-};
-
-export interface IRequestHome {
-  type: string;
-  payload: IDataHomeRequest;
+  data: IRestaurantResponse;
 }

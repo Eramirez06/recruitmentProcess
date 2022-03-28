@@ -1,10 +1,24 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {createSlice, createAction} from '@reduxjs/toolkit';
-import {IDataHomeRequest, IHomeState} from './model';
+import {IHomeState} from './model';
 
 const initialState: IHomeState = {
   isLoading: false,
-  data: {},
+  data: {
+    name: 'tes',
+    menus: [
+      {
+        name: 'test',
+        options: [
+          {
+            name: '',
+            description: '',
+            price: '',
+          },
+        ],
+      },
+    ],
+  },
 };
 
 export const persistConfigHome = {
@@ -12,7 +26,7 @@ export const persistConfigHome = {
   storage: AsyncStorage,
 };
 
-export const request = createAction<IDataHomeRequest>('home/request');
+export const request = createAction('home/request');
 
 const homeSlice = createSlice({
   name: 'home',
@@ -22,8 +36,7 @@ const homeSlice = createSlice({
       return {
         ...state,
         isLoading: false,
-        user: action.payload,
-        isAuthorized: true,
+        data: action.payload,
       };
     },
     error: state => {

@@ -1,13 +1,13 @@
+import React, {memo} from 'react';
 import {IItemMenuProps} from '../types';
-import React from 'react';
 import {View} from 'react-native';
 import styles from './styles';
 import Typography from 'components/Typography';
 
-const ItemMenu = ({title, description, price}: IItemMenuProps) => {
+const ItemMenu = ({name, description, price}: IItemMenuProps) => {
   return (
     <View style={styles.container}>
-      <Typography variant="title">{title}</Typography>
+      <Typography variant="title">{name}</Typography>
       <Typography style={styles.customDesc} variant="description">
         {description}
       </Typography>
@@ -19,4 +19,4 @@ const ItemMenu = ({title, description, price}: IItemMenuProps) => {
   );
 };
 
-export default ItemMenu;
+export default memo(ItemMenu);

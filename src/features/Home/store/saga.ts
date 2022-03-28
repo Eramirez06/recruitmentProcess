@@ -1,24 +1,17 @@
-import {takeLatest, all, fork, put} from 'redux-saga/effects';
+import {requestRestaurantInfoFirebase} from '../api';
+import {takeLatest, all, put, call} from 'redux-saga/effects';
 import {SagaIterator} from '@redux-saga/types';
-import {request, success} from './reducer';
-import {IRequestHome} from './model';
+import {request, success, error} from './reducer';
 
-function* setUserLogin({payload}: IRequestHome): SagaIterator {
-  console.log('payload', payload); // this way you can get access to {userName: string, password: string}
-  yield put(
-    success({
-      id: '123',
-      firstName: 'Emilio',
-      lastName: 'Ramirez',
-      email: 'test@gmail.com',
-    }),
-  );
-}
-
-function* requestLogin() {
-  yield takeLatest(request, setUserLogin);
+function* requestRestaurant(): SagaIterator {
+  try {
+    const response = yield call(requestRestaurantInfoFirebase);
+    yield put(success(response));
+  } catch (er) {
+    yield put(error());
+  }
 }
 
 export default function* authSaga() {
-  yield all([fork(requestLogin)]);
+  yield all([takeLatest(request, requestRestaurant)]);
 }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "684759716698",
+    "firebase_url": "https://recruitmentprocess-01-default-rtdb.firebaseio.com",
+    "project_id": "recruitmentprocess-01",
+    "storage_bucket": "recruitmentprocess-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684759716698:android:0fa2fbe26f455bdb511963",
+        "android_client_info": {
+          "package_name": "com.recruimentprocess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684759716698-coihfd89lc9c8m0c5hcaj1d0voalduui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI6BnQUfsG8PrTTGhDEsU4pArkKmj1cao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684759716698-coihfd89lc9c8m0c5hcaj1d0voalduui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
