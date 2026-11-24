@@ -18,7 +18,7 @@
     "@react-navigation/native-stack": "^6.5.0",
     "@reduxjs/toolkit": "^1.8.0",
     "axios": "^0.26.1",
-    "i18next": "^21.6.14",
+    "i18next": "^26.3.4",
     "native-base": "^3.3.7",
     "react": "17.0.2",
     "react-i18next": "^11.16.1",
